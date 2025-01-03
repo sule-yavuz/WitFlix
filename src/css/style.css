@@ -1,11 +1,15 @@
 *{
-    border: 1px solid #c2c2c2;
+   
 }
 body {
-    
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  
 }
 
-header, main, section, footer{
+main, footer{
     padding: 1rem;
 }
 
@@ -18,17 +22,199 @@ header, main, section, footer{
     row-gap: 2rem;
 }
 
-header {
+.flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header {
     padding: 1rem;
 }
 
 header .logo{
-    max-width: 100px;
-    height: auto;
+    height: 30px;
+}
+header nav{
+    gap: 1rem;
 }
 
-header .search{
-    margin-right: 3rem;
+header nav a{
+    text-decoration: none;
+    color: #000;
 }
+
+header .right{ 
+    gap: 1rem;
+}
+header .right .search{
+    position: relative;
+}
+
+header .right .search i{
+   position: absolute;
+   right: 10px;
+   top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+header .right .profile{
+    gap: 1rem;
+}
+
+header .profile{
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+main{
+    background-image: url("/src/images/INCEPTION.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 5rem 3rem;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.movie-details span{
+    color: red;
+    font-weight: bold;
+}  
+
+.btn {
+    display: inline-block; 
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #E53935;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    border: none;
+  }
+
+  .btn:hover{
+    background-color: #C62828;
+   border: none;
+  }
+
+  .btn i {
+    margin: auto;
+    text-align: center;
+   
+  }
+  
+  .btn i{
+   position: absolute;
+   left: 18px;
+   top: 50%;
+   font-size: 20px;
+   cursor: pointer;
+   color: white;
+}
+    main .btn i{
+    gap: 1rem;
+}
+
+.suggestion-row{
+    display: flex;
+    flex-direction: column;;
+    row-gap: 1rem;
+}
+
+.suggestion-row .s-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.suggestion-row h2{
+    font-size: 0.9rem;
+}
+
+.suggestion-row a{
+   text-decoration: none;
+   font-size: 0.8rem;
+}
+.suggestion-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.suggestion-content .item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border: 2px solid #c2c2c2;
+    padding: 2rem 3rem 2rem 1 rem;
+    width: 20%;
+    background-color: darkgrey;
+}
+
+
+
+.play-now-btn:hover {
+    background-color: #C62828;
+}
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-about {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .footer-social span,
+  .footer-apps span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+  }
+  
+  .footer-social a,
+  .footer-apps a {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  
+  .footer-social img,
+  .footer-apps img {
+    width: 38px;
+    height: 38px;
+  }
